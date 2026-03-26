@@ -11,7 +11,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: 'http://localhost:5173', // Vite's default port
+  // origin: 'http://localhost:5173', // Vite's default port
+  origin: 'https://jobby-flame.vercel.app',
   credentials: true
 }));
 app.use(express.json());
